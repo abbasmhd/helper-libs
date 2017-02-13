@@ -6,7 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+*.vs10x
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -144,6 +144,10 @@ publish/
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
+# NuGet Packages Directory
+packages/*
+jspm_packages/*
+node_modules/*
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
