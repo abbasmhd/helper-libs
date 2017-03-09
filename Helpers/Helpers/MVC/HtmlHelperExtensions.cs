@@ -2,11 +2,9 @@
 
 namespace System.Web.Mvc {
 
-    public static class HtmlHelperExtensions
-    {
+    public static class HtmlHelperExtensions {
 
-        public static HtmlString ValidationSummaryBootstrap(this HtmlHelper htmlHelper)
-        {
+        public static HtmlString ValidationSummaryBootstrap(this HtmlHelper htmlHelper) {
             if(htmlHelper == null) {
                 throw new ArgumentNullException(nameof(htmlHelper));
             }
@@ -14,7 +12,5 @@ namespace System.Web.Mvc {
                        ? new HtmlString(String.Empty)
                        : new HtmlString($"<div class=\"alert alert-danger\">{htmlHelper.ValidationSummary()}</div>");
         }
-
     }
-
 }
